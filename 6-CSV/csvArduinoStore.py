@@ -10,7 +10,7 @@ it.start()
 pirPin = board.get_pin('d:11:i')
 a0 = board.get_pin('a:0:i')
 
-with open ('SensorDataStore.csv','w') as f:
+with open ('SensorDataStore.csv','w',newline = '') as f:
 	w = csv.writer(f)
 	w.writerow(["Number","Potentiometer","Motion sensor"])
 	i = 0
